@@ -5,6 +5,7 @@
 |Currying||
 |Hoisting| By allocating memory to save the names of declared variables and functions (hoisted 1st) |
 || and then hoisting/'raising' them to the top of their current scope prior to execution |
+|Hoisting order| function delcaration -> function expression -> variables |
 |Concurrency Model||
 |Event Loop||
 |Memory Management||
