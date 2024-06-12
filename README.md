@@ -16,7 +16,7 @@
 |Their Funciton: | Maintain the order of code execution when we run asynchronous functions |
 
 
-|Memory Management |
+|Memory Management ||
 |-----|-----|
 |Memory Heap| Unordered storage of objects and variables|
 |Call Stack | tracks currently run function|
