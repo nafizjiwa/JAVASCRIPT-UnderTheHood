@@ -15,10 +15,11 @@
 | Event Loop Parts: | Memory Heap, Call Stack, Event Queue, Event Loop and Node or Web APIs|
 |Their Funciton: | Maintain the order of code execution when we run asynchronous functions |
 
-|Memory Management||
 
-Memory Heap - Unordered storage of objects and variables
-Call Stack - tracks currently run function
-Event Queue
-Event Loop
-Node or Web APIs
+|Memory Management |
+|-----|-----|
+|Memory Heap| Unordered storage of objects and variables|
+|Call Stack | tracks currently run function|
+|Event Queue| holds messages of functions waiting processing and added back to stack|
+|Event Loop||
+|Node or Web APIs||
