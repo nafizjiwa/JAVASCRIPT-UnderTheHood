@@ -19,7 +19,9 @@
 |Memory Management ||
 |-----|-----|
 |Memory Heap| Unordered storage of objects and variables|
-|Call Stack | tracks currently run function|
+|Call Stack | tracks the currently running function|
 |Event Queue| holds messages of functions waiting processing and added back to stack|
-|Event Loop||
+|Event Loop|Adds messages from the Event Queue to the Call Stack|
 |Node or Web APIs||
+
+The Event Loop can be summarized as: when code is executed, it is handled by the heap and call stack, which interact with Node and Web APIs. Those APIs enable concurrency and pass asynchronous messages back to the stack via an event queue. The event queue’s interaction with the call stack is managed by an event loop.
