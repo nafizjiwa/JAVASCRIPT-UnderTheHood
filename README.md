@@ -35,23 +35,26 @@ Static storage<br>
 Object size is known fixed<br>
 Ordered<br>
 Stores Primitive values <br>
+Primitive types - number, string, boolean, undefined, null.<br>
 
 ##### THE HEAP
 Dynamic memory allocation at runtime <br>
 UnOrdered<br>
 Stores Reference (instances) values.<br>
+Reference types - Object literals, Arrays, Functions, etc <br>
 So it tells JavaScript where to find objects and functions.<br>
         
         const cat = {                            CAT `STORED IN HEAP`
             name: "Jupiter"                      A REFERENCE IS STORED IN STACK AND THE NAME PROPERTY IS `STORED IN STACK`
 }
 
-Primitive types - number, string, boolean, undefined, null.<br>
-Reference types - Object literals, Arrays, Functions, etc <br>
+###### ***NOTE*** 
+--> Variable names take up memory in the stack, while function definitions and objects have memory in the heap
+
 
 ##### The Memory Life Cycle
 3 parts:<br>
-1. Memory Allocation (Values declared and stored)
+1. Memory Allocation (Values declared and stored then allocated)
 2. Memory in Use (Values read or rewritten)
 3. Releasing Memory (Values no longer used are removed from memory)
 
