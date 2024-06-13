@@ -33,17 +33,17 @@ The event queue’s interaction with the call stack is managed by an event loop.
 
 #### THE STACK
 Static storage<br>
-Object size is known fixed<br>
-Ordered<br>
-STORES: <br>
+Where Data size fixed<br>
+Allocates fixed data so Ordered <br>
+STORED DATA TYPES: <br>
 Primitive types - number, string, boolean, undefined, null, variables.<br>
 
 #### THE HEAP
 Dynamic memory allocation at runtime <br>
-UnOrdered<br>
-STORES:<br>
+Where Data size not fixed so UnOrdered<br>
+STORED DATA TYPES:<br>
 Reference types (instances) - Object literals, Arrays, Functions, etc <br>
-So it tells JavaScript where to find objects and functions.<br>
+***So*** it tells JavaScript where to find objects and functions BY THE REFERENCES IN THE STACK.<br>
         
         const cat = {                            CAT `STORED IN HEAP`
             name: "Jupiter"                      A REFERENCE IS STORED IN STACK AND THE NAME PROPERTY IS `STORED IN STACK`
@@ -93,21 +93,44 @@ So it tells JavaScript where to find objects and functions.<br>
 #### Garbage Collection
 
 - The process of clearing memory<br>
-- JavaScript uses to algorithms for Garbage Collection<br>
+- JavaScript uses 2 algorithms for Garbage Collection<br>
 
-                 * REFERENCE COUNTING
+                 1. REFERENCE COUNTING
                           Eg. Create an object - reference count = 1
                               Create another varaible point to same object - reference count = 2
                               A function uses the object - reference count = 3
-                                  Function finished then elements are garbage collected reference = 0
+                                  Function finished then elements are garbage collected # of references = 0
                                           Memory block also = 0 and now utilize it for other storage
                             
-                 * MEMORY SWEEPING
+                 2. MEMORY SWEEPING
                           - Periodically run starting at the root (global object)
-                          - Sweeps by marking elements
+                          - Sweeps by finding and marking elements
                           - Unmarked elements are garbage collected
 
+  #### Memory Leaks
 
+  - Memory no longer needed is not released. <br>
+  - When garbage collection fails to find an object that lost its connection to the root object, or when objects grow in size and are referenced by other objects.<br>
+  - Some functions which reference other objects keep objects in memory even though. <br>
+
+            1. Messy Closure
+                A combination of functions bundled together (enclosed) with REFERENCES to its surrounding state.
+            2. Dangling Timers and Event Listeners
+                Leak occurs when can't clear the function from continally running then assign these values to variables helps clear when needed 
+            3. Circular References
+                When 2 objects have pointers referencing each other. Their reference counts would be 2 each
+                    - mark and sweep fixes this
+    
+#### Declaring Variables on the Global Object
+
+  - Declare variables properly<br>
+  - Global variables are available from the root so never garbage collected.<br>
+  - Strict-mode helps keep global scope clean<br>
+
+#### Performaces Issues can be caused by 
+
+- Frequency of garbage collection <br>
+- High object churn causes frequent garbage collection --> slows programs.<br>
 
 
   
