@@ -26,4 +26,32 @@
 |Data structures for memory| The Heap|
 || The Call Stack |
 
-The Event Loop can be summarized as: when code is executed, it is handled by the heap and call stack, which interact with Node and Web APIs. Those APIs enable concurrency and pass asynchronous messages back to the stack via an event queue. The event queue’s interaction with the call stack is managed by an event loop.
+The Event Loop can be summarized as: when code is executed, it is handled by the heap and call stack, which interact with Node and Web APIs. <br> 
+Those APIs enable concurrency and pass asynchronous messages back to the stack via an event queue. <br>
+The event queue’s interaction with the call stack is managed by an event loop.<br>
+
+##### THE STACK
+Static storage<br>
+Object size is known fixed<br>
+Ordered<br>
+Stores Primitive values <br>
+
+##### THE HEAP
+Dynamic memory allocation at runtime <br>
+UnOrdered<br>
+Stores Reference (instances) values.<br>
+So it tells JavaScript where to find objects and functions.<br>
+        
+        const cat = {                            CAT `STORED IN HEAP`
+            name: "Jupiter"                      A REFERENCE IS STORED IN STACK AND THE NAME PROPERTY IS `STORED IN STACK`
+}
+
+Primitive types - number, string, boolean, undefined, null.<br>
+Reference types - Object literals, Arrays, Functions, etc <br>
+
+##### The Memory Life Cycle
+3 parts:<br>
+1. Memory Allocation (Values declared and stored)
+2. Memory in Use (Values read or rewritten)
+3. Releasing Memory (Values no longer used are removed from memory)
+
