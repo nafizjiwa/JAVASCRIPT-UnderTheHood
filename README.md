@@ -49,7 +49,8 @@ So it tells JavaScript where to find objects and functions.<br>
 }
 
 ###### ***NOTE*** 
---> VARIABLE NAMES take up memory in the STACK, while FUNCITON DEFINITION and OBJECTS have memory in the HEAP.<BR>
+---> VARIABLE NAMES take up memory in the STACK,
+---> FUNCITON DEFINITION and OBJECTS have memory in the HEAP.<BR>
 
 
 ##### The Memory Life Cycle
