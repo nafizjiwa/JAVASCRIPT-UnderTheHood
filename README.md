@@ -11,10 +11,12 @@
 || and then hoisting/'raising' them to the top of their current scope prior to execution |
 |Hoisting order| function delcaration -> function expression -> variables |
 |Concurrency Model||
-|Event Loop| helps run non blocking code|
-| Result:| event loop helps emulate concurrency in javascript to manage code execution |
+|Event Loop| helps emulate concurrency by running asychronous or non blocking code |
+| | Result: Manages code execution |
 | Event Loop Parts: | Memory Heap, Call Stack, Event Queue, Event Loop and Node or Web APIs|
-|Their Funciton: | Maintain the order of code execution when we run asynchronous functions |
+|| Function: Maintain the order of code execution | 
+|Asynchronous| ability to do multiple tasks at same time|
+|non blocking code| not stopping the other parts of the program from runnning while it completes a task|
 <br>
 <br>
 <br>
