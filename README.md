@@ -14,7 +14,9 @@
 | Result:| event loop helps emulate concurrency in javascript to manage code execution |
 | Event Loop Parts: | Memory Heap, Call Stack, Event Queue, Event Loop and Node or Web APIs|
 |Their Funciton: | Maintain the order of code execution when we run asynchronous functions |
-<br><br><br>
+<br>
+<br>
+<br>
 
 |Memory Management ||
 |-----|-----|
