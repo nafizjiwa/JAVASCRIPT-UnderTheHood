@@ -5,7 +5,7 @@
 |Javascript| is a single-threaded language |
 | Means |can’t executed 2 statements simultaneously|
 | Must run one code then run another code| Results: Blocking code |
-|Currying||
+|Currying|break down of a function with multiple arguments into a series of functions each with 1 argument|
 |Hoisting| By allocating memory to save the names of declared variables and functions (hoisted 1st) |
 || and then hoisting/'raising' them to the top of their current scope prior to execution |
 |Hoisting order| function delcaration -> function expression -> variables |
