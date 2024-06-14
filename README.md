@@ -14,7 +14,7 @@
 | Result:| event loop helps emulate concurrency in javascript to manage code execution |
 | Event Loop Parts: | Memory Heap, Call Stack, Event Queue, Event Loop and Node or Web APIs|
 |Their Funciton: | Maintain the order of code execution when we run asynchronous functions |
-
+<br><br><br>
 
 |Memory Management ||
 |-----|-----|
@@ -79,8 +79,8 @@ Reference types (instances) - Object literals, Arrays, Functions, etc <br>
            }
                         
            let sarah = nameObjectModification(aaliyah, "Sarah");      //1st create Sarah object from above fnc
-                                                                                   //Referenced to aaliyah object and saved to new variable sarah
-                                                                                   // Both variables reference same object                  
+                                                                     //Referenced to aaliyah object and saved to new variable sarah
+                                                                     // Both variables reference same object                  
            console.log(aaliyah); // { name: 'Sarah' }
            console.log(sarah); // { name: 'Sarah' }
 
