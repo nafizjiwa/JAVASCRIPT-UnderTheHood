@@ -132,5 +132,24 @@ Reference types (instances) - Object literals, Arrays, Functions, etc <br>
 - Frequency of garbage collection <br>
 - High object churn causes frequent garbage collection --> slows programs.<br>
 
+#### Closures
+-  A closure is the combination of a function (form closures) and its lexical environment where the function/variables declared
+-  
+ 
 
+                function makeFunc() {
+                    const name = "Mozilla";
+                    function displayName() {
+                      console.log(name);
+                    }
+                    return displayName;
+                 }
+                
+                const myFunc = makeFunc();
+                myFunc();
+
+
+Eg. myFunc is a reference to displayName. The reference is created when makeFunc is called. <br>
+DisplayName maintains a reference to its lexical environment <br>
+myFunc = invoked, the variable name remains available for use, and "Mozilla" is passed to console.log. <br>
   
