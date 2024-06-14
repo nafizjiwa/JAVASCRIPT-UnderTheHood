@@ -25,8 +25,10 @@
 |Event Queue| holds messages of functions waiting processing and added back to stack|
 |Event Loop|Adds messages from the Event Queue to the Call Stack|
 |Node or Web APIs||
-|Data structures for memory| The Heap|
+|Data structures used for memory storage | The Heap|
 || The Call Stack |
+|Function| memory stores different Data Types |
+
 
 The Event Loop can be summarized as: when code is executed, it is handled by the heap and call stack, which interact with Node and Web APIs. <br> 
 Those APIs enable concurrency and pass asynchronous messages back to the stack via an event queue. <br>
@@ -39,6 +41,12 @@ Where Data size fixed<br>
 Allocates fixed data so Ordered <br>
 STORED DATA TYPES: <br>
 Primitive types - number, string, boolean, undefined, null, variables.<br>
+When a varible is created the stack stores the address for the variable with a value<br>
+If the value is changed to the variable it will now point to a different address and different value.<br>
+![image](https://github.com/nafizjiwa/JAVASCRIPT-UnderTheHood/assets/56348190/47a5a96c-3020-4ce9-96fb-5ddaa91636f5)
+![image](https://github.com/nafizjiwa/JAVASCRIPT-UnderTheHood/assets/56348190/2fab32a3-6506-456e-a61e-474043e70486)
+
+
 
 #### THE HEAP
 Dynamic memory allocation at runtime <br>
@@ -154,4 +162,6 @@ Reference types (instances) - Object literals, Arrays, Functions, etc <br>
 Eg. myFunc is a reference to displayName. The reference is created when makeFunc is called. <br>
 DisplayName maintains a reference to its lexical environment <br>
 myFunc = invoked, the variable name remains available for use, and "Mozilla" is passed to console.log. <br>
+
+
   
