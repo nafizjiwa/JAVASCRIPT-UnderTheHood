@@ -118,7 +118,8 @@ Reference types (instances) - Object literals, Arrays, Functions, etc <br>
             1. Messy Closure
                 A combination of functions bundled together (enclosed) with REFERENCES to its surrounding state.
             2. Dangling Timers and Event Listeners
-                Leak occurs when can't clear the function from continally running then assign these values to variables helps clear when needed 
+                Leak occurs when can't clear a continually running function
+                    - FIX - assign function to a variable which can be cleared as needed 
             3. Circular References
                 When 2 objects have pointers referencing each other. Their reference counts would be 2 each
                     - mark and sweep fixes this
@@ -135,9 +136,8 @@ Reference types (instances) - Object literals, Arrays, Functions, etc <br>
 - High object churn causes frequent garbage collection --> slows programs.<br>
 
 #### Closures
--  A closure is the combination of a function (form closures) and its lexical environment where the function/variables declared
--  
- 
+-  A closure a function and its lexical environment (function/variables/data declared).
+   
 
                 function makeFunc() {
                     const name = "Mozilla";
