@@ -2,9 +2,10 @@
 
 |Javascript| Description |
 |-----|-----|
-|Javascript| is a single-threaded language |
-| Means |can’t executed 2 statements simultaneously|
-| Must run one code then run another code| Results: Blocking code |
+|Javascript| A single-threaded language |
+|| MEANING |
+|  |Runs one code at a time |
+|| Results: Blocking code |
 |Currying|break down of a function with multiple arguments into a series of functions each with 1 argument|
 |Hoisting| By allocating memory to save the names of declared variables and functions (hoisted 1st) |
 || and then hoisting/'raising' them to the top of their current scope prior to execution |
@@ -21,9 +22,14 @@
 |Memory Management ||
 |-----|-----|
 |Memory Heap| Unordered storage of objects and variables|
-|Call Stack | tracks the currently running function|
+|Call Stack | tracks the currently running function |
+|| and records at what point in time a function was executing.|
 |Event Queue| holds messages of functions waiting processing and added back to stack|
-|Event Loop|Adds messages from the Event Queue to the Call Stack|
+||Adds messages from the Event Queue to the Call Stack|
+|Event Loop|checks the call stack, IF IT'S EMPTY:|  
+||get oldest callback from the queue|
+||push it into the call stack |
+||call stack executes the callback|
 |Node or Web APIs||
 |Data structures used for memory storage | The Heap|
 || The Call Stack |
