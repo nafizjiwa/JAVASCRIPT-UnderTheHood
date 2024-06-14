@@ -25,9 +25,8 @@
 |Call Stack | tracks the currently running function |
 || and records at what point in time a function was executing.|
 |Event Queue| holds messages of functions waiting processing and added back to stack|
-||Adds messages from the Event Queue to the Call Stack|
 |Event Loop|checks the call stack, IF IT'S EMPTY:|  
-||get oldest callback from the queue|
+||get oldest callback (message) from the queue|
 ||push it into the call stack |
 ||call stack executes the callback|
 |Node or Web APIs||
