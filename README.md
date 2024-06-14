@@ -53,7 +53,16 @@ Dynamic memory allocation at runtime <br>
 Where Data size not fixed so UnOrdered<br>
 STORED DATA TYPES:<br>
 Reference types (instances) - Object literals, Arrays, Functions, etc <br>
-***So*** it tells JavaScript where to find objects and functions BY THE REFERENCES IN THE STACK.<br>
+Values are stored in the Heap so they can change when they are reassigned.<br>
+The stack contains a reference address to the value in the HEAP.<br>
+
+![image](https://github.com/nafizjiwa/JAVASCRIPT-UnderTheHood/assets/56348190/92133601-32f7-4c96-8d08-918a1467a2c0)
+
+Declare a new variable newEmp = emp, the new object POINTS to the ADDRESS of the original object, and its values.<br> 
+If new object value changes , it will change the original values.<br>
+Why? The new variable newEmp (not a new object) it only points to the address of original object values, so mutate one will mutate the other.<br>
+
+***So*** the Heap tells JavaScript where to find objects/functions BY the REFERENCES IN THE STACK.<br>
         
         const cat = {                            CAT `STORED IN HEAP`
             name: "Jupiter"                      A REFERENCE IS STORED IN STACK AND THE NAME PROPERTY IS `STORED IN STACK`
