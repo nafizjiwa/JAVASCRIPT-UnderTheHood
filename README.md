@@ -1,4 +1,14 @@
 # JAVASCRIPT-UnderTheHood
+|Javascript| UNDER THE HOOD |
+|-----|-----|
+|| CURRYING |
+||HOISTING|
+||CONCURRENCY|
+||EVENT LOOP|
+||MEMORY MANAGEMENT|
+||DEBUGGING|
+
+### DEEPER DIVE
 
 |Javascript| Description |
 |-----|-----|
