@@ -2,7 +2,7 @@
 
 |Javascript| Description |
 |-----|-----|
-|Javascript| A single-threaded language |
+|| A single-threaded language |
 || MEANING |
 |  |Runs one code at a time |
 || Results: Blocking code |
@@ -17,6 +17,9 @@
 || Function: Maintain the order of code execution | 
 |Asynchronous| ability to do multiple tasks at same time|
 |non blocking code| not stopping the other parts of the program from runnning while it completes a task|
+|Memory |Management|
+|Debugging|Memory|
+
 <br>
 <br>
 <br>
