@@ -71,9 +71,10 @@ Why? The new variable newEmp (not a new object) it only points to the address of
 
 ***So*** the Heap tells JavaScript where to find objects/functions BY the REFERENCES IN THE STACK.<br>
         
-        const cat = {                            CAT `STORED IN HEAP`
-            name: "Jupiter"                      A REFERENCE IS STORED IN STACK AND THE NAME PROPERTY IS `STORED IN STACK`
-}
+        const cat = {                   CAT `STORED IN HEAP`
+            name: "Jupiter"                 A REFERENCE IS STORED IN STACK AND
+        }                                       THE NAME PROPERTY IS `STORED IN STACK`
+
 
 ###### ***NOTE*** 
 ---> VARIABLE NAMES take up memory in the STACK<BR>
