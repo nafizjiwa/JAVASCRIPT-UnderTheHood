@@ -101,13 +101,14 @@ Why? The new variable newEmp (not a new object) it only points to the address of
            }                                                  //Reference in STACK
                         
            function nameObjectModification(obj, name) {               
-                   obj.name = name;                                //Object created and used still references the
-                   return obj;                                     //original object aaliyah 
+                   obj.name = name;                    //Function used to create Oblect which still 
+                   return obj;                            //references the original object aaliyah 
            }
                         
-           let sarah = nameObjectModification(aaliyah, "Sarah");      //1st create Sarah object from above fnc
-                                                                     //Referenced to aaliyah object and saved to new variable sarah
-                                                                     // Both variables reference same object                  
+           let sarah = nameObjectModification(aaliyah, "Sarah");
+                      //1st create Sarah object with nambObjectModification Referenced to aaliyah object
+                          // then saved to new variable sarah Both variables reference same object 
+               
            console.log(aaliyah); // { name: 'Sarah' }
            console.log(sarah); // { name: 'Sarah' }
 
@@ -126,7 +127,7 @@ Why? The new variable newEmp (not a new object) it only points to the address of
                           Eg. Create an object - reference count = 1
                               Create another varaible point to same object - reference count = 2
                               A function uses the object - reference count = 3
-                                  Function finished then elements are garbage collected # of references = 0
+                               Function finished then elements are garbage collected # of references = 0
                                           Memory block also = 0 and now utilize it for other storage
                             
                  2. MEMORY SWEEPING
